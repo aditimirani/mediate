@@ -1,13 +1,15 @@
 import React from 'react'
-import {CardContainer, Title, Hamburger} from './CardStyles'
+import {CardContainer,CardHeader, Title, Hamburger} from './CardStyles'
+
 const Card = props =>{
   return(
-    <div>
-      <CardContainer>
-        <Title>Meditation</Title>
+    <CardContainer backgroundImage={props.backgroundImage }>
+      <CardHeader>
+        <Title fontSize={'32px'}>Meditation</Title>
         <Hamburger/>
-        </CardContainer>
-      </div>
+      </CardHeader>
+      {props.children}
+    </CardContainer>
   )
 }
 export default Card
