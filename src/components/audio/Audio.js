@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {Title} from '../card/CardStyles'
-import {AudioContainer, AudioFrequency, AudioRoot, AudioPlay, AudioImg, AudioDescription,FrequencyRoot,FrequencyRoot1 } from './AudioStyles'
+import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,FrequencyRoot,FrequencyRoot1 } from './AudioStyles'
   class Audio extends React.Component {
     constructor(props){
       super(props)
@@ -18,7 +18,7 @@ import {AudioContainer, AudioFrequency, AudioRoot, AudioPlay, AudioImg, AudioDes
     return(
       <AudioContainer>
         <AudioDescription>
-        <Title fontColor={'#222222'} fontSize={'12px'} opacity={.6} letterSpacing={'2pt'} FontFamily={`Montserrat-Bold, sans-serif `}>CALMING OCEAN</Title>
+        <Title fontColor={'#222222'} fontSize={'12px'} opacity={.6} letterSpacing={'2pt'} fontFamily={`Montserrat-Bold, sans-serif `}>CALMING OCEAN</Title>
         <Title fontColor={'#222222'} fontSize={'12px'} opacity={.6} flexGrow={0}>2.34</Title>
         </AudioDescription>
         <AudioPlay>
@@ -49,7 +49,7 @@ import {AudioContainer, AudioFrequency, AudioRoot, AudioPlay, AudioImg, AudioDes
             )}
             <FrequencyRoot1>
             {this.props.frequency.map((val, key) =>
-              <AudioFrequency key={key} height={val} opacity={'0.5'} BgColor={'#222222'}/>
+              <AudioFrequency key={key} height={val} opacity={'0.5'} bgColor={'#222222'}/>
             )}
             </FrequencyRoot1>
         </FrequencyRoot1>

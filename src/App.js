@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './AppStyles';
 import Meditate from './components/meditate/Meditate'
 
 class App extends Component {

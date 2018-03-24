@@ -1,21 +1,7 @@
 
-import styled ,{injectGlobal} from 'styled-components';
+import styled from 'styled-components';
 import hamburger from '../../images/hamburger.svg'
-import heart from '../../images/likeblackheartbutton.svg'
-import pauseImg from '../../images/icons8-pause-50.png'
-import myfont from '../../font/BebasNeueBold.ttf';
 
-// added custom font BebasNeueRegular
-injectGlobal`
-  @font-face {
-    font-family: 'BebasNeueRegular';
-    src: url(${myfont});
-  }
-  body {
-    margin:15px;
-    font-family:'BebasNeueRegular'
-  }
-`;
 export const CardContainer = styled.div`
   background-image: url(${({backgroundImage =''}) => backgroundImage});
   background-color: ${({backgroundColor ='#fff'}) => backgroundColor};
@@ -36,10 +22,11 @@ export const Title = styled.div `
   display: flex;
   font-size: ${({ fontSize = '15px' }) => fontSize};
   justify-content: space-between;
-  margin-bottom: ${({ MarginBottom = '24px' }) => MarginBottom};
+  margin-bottom: ${({ marginBottom = '24px' }) => marginBottom};
   padding-left:14px;
   letter-spacing: ${({ letterSpacing = '2.8pt' }) => letterSpacing};
-  font-family: ${({ FontFamily = `'Montserrat-SemiBold', sans-serif` }) => FontFamily} ;
+  font-family: ${({ fontFamily = `'Montserrat-SemiBold', sans-serif` }) => fontFamily} ;
+  text-transform : uppercase;
 `
 
 export const Hamburger = styled.img`

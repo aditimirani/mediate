@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Clock from '../../images/icons8-clock.svg'
+import clock from '../../images/icons8-clock.svg'
 
 export const ClockContainer = styled.div`
   color: #222222;
@@ -8,7 +8,7 @@ export const ClockContainer = styled.div`
   padding: 20px 0px 20px 10px;
 `
 export const ClockImage = styled.img`
-  background-image: url(${Clock});
+  background-image: url(${clock});
   height:20px;
   width:20px;
   background-size: cover;

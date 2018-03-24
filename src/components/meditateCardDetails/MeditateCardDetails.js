@@ -16,7 +16,7 @@ const MeditateCardDetails = props => {
         <FlexKarma>KARMA POINTS EARNED</FlexKarma>
         </div>
         </Flex>
-      <Title fontSize={'18px'} letterSpacing={'2pt'} MarginBottom={'10px'}>{props.contentTitle}</Title>
+      <Title fontSize={'18px'} letterSpacing={'2pt'} marginBottom={'10px'}>{props.contentTitle}</Title>
       <Title letterSpacing={'2.8pt'}>READY BEFORE YOU START</Title>
     </div>
   )

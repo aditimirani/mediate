@@ -10,7 +10,7 @@ export const AudioContainer = styled.div`
   margin-top:73px;
   min-height: 5rem;
   background-color: #ffffff;
-  // margin:30px;
+  width:100%;
 
 `
 export const AudioDescription = styled.div `
@@ -44,11 +44,11 @@ export const AudioImg = styled.img`
 export const AudioFrequency = styled.div`
   width:2px;
   height:${({ height = '50px' }) => `${calculateHeight(height)}px`};
-  background:${({ BgColor = '#50E3C2' }) => BgColor};
+  background:${({ bgColor = '#50E3C2' }) => bgColor};
   display:inline-block;
   margin-right:7px;
   opacity: ${({ opacity = '1' }) => opacity};
-  border: 1px solid ${({ BgColor = '#50E3C2' }) => BgColor};
+  border: 1px solid ${({ bgColor = '#50E3C2' }) => bgColor};
   border-radius: 3px;
 
 `
