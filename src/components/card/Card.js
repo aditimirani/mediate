@@ -3,9 +3,9 @@ import {CardContainer,CardHeader, Title, Hamburger} from './CardStyles'
 
 const Card = props =>{
   return(
-    <CardContainer backgroundImage={props.backgroundImage }>
+    <CardContainer backgroundImage={props.backgroundImage}>
       <CardHeader>
-        <Title fontSize={'32px'}>Meditation</Title>
+        <Title>{props.title}</Title>
         <Hamburger/>
       </CardHeader>
       {props.children}
