@@ -1,4 +1,4 @@
-import styed from 'styled-components'
+
 import styled ,{injectGlobal} from 'styled-components';
 import hamburger from '../../images/hamburger.svg'
 import heart from '../../images/likeblackheartbutton.svg'
