@@ -16,19 +16,12 @@ export const AudioContainer = styled.div`
 export const AudioDescription = styled.div `
   display: flex;
  `
- export const FrequencyRoot = styled.div `
+ export const AudioControl = styled.div `
  display: flex;
  flex-grow:1;
  `
- export const FrequencyRoot1 = styled.div `
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
+ export const FrequencyRoot = styled.div `
   display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
  
  `

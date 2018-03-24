@@ -15,7 +15,7 @@ const Meditate = props => {
   const frequency = [20,10,30,20,40,30,50,40,20]
   return (
     <div>
-      <Card backgroundImage={activities[0].landscapeDesktopImage.url} title={activities[0].title} >
+      <Card backgroundImage={activities[0]} title={activities[0].title} >
         <MeditateCardDetails  contentTitle={activities[0].contentTitle}/>
         <AudioComponent frequency={frequency}/>
         <ClockContainer><ClockImage/><Time>{`10.00 ${'Minutes'}`}</Time></ClockContainer>

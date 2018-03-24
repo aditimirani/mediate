@@ -1,6 +1,6 @@
 import React from 'react'
 import {Title}  from '../CommonStyles'
-import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,FrequencyRoot,FrequencyRoot1 } from './AudioStyles'
+import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,AudioControl,FrequencyRoot } from './AudioStyles'
   class Audio extends React.Component {
     constructor(props){
       super(props)
@@ -22,7 +22,7 @@ import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,FrequencyRoo
         <Title fontColor={'#222222'} fontSize={'12px'} opacity={.6} flexGrow={0}>2.34</Title>
         </AudioDescription>
         <AudioPlay>
-          <FrequencyRoot>
+          <AudioControl>
           <svg width="108" height="62">
             <defs>
               <filter id="playshadow" x="-20%" y="0" width="200%" height="200%">
@@ -42,17 +42,17 @@ import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,FrequencyRoo
           <rect width="2" height="12" fill="#575757" x="82" y="25" />
             
           </svg>
-          </FrequencyRoot>
-          <FrequencyRoot1>
+          </AudioControl>
+          <FrequencyRoot>
             {this.props.frequency.map((val, key) =>
               <AudioFrequency key={key} height={val}/>
             )}
-            <FrequencyRoot1>
+            <FrequencyRoot>
             {this.props.frequency.map((val, key) =>
               <AudioFrequency key={key} height={val} opacity={'0.5'} bgColor={'#222222'}/>
             )}
-            </FrequencyRoot1>
-        </FrequencyRoot1>
+            </FrequencyRoot>
+        </FrequencyRoot>
         </AudioPlay>
       </AudioContainer>
     )

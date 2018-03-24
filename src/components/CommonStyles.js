@@ -4,7 +4,7 @@ export const Title = styled.div `
   opacity: ${({ opacity = '1' }) => opacity};
   flex-grow: ${({ flexGrow = '1' }) => flexGrow};
   display: flex;
-  font-size: ${({ fontSize = '15px' }) => fontSize};
+  font-size: ${({ fontSize = '14px' }) => fontSize};
   justify-content: space-between;
   margin-bottom: ${({ marginBottom = '24px' }) => marginBottom};
   padding-left:14px;

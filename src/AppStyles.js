@@ -1,5 +1,5 @@
 import  {injectGlobal} from 'styled-components';
-import myfont from '../src/font/BebasNeueBold.ttf';
+import myfont from '../src/font/BebasNeueRegular.ttf';
 
 
 // added custom font BebasNeueRegular

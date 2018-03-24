@@ -3,7 +3,13 @@ import styled from 'styled-components';
 import hamburger from '../../images/hamburger.svg'
 
 export const CardContainer = styled.div`
-  background-image: url(${({backgroundImage =''}) => backgroundImage});
+  background-image: url(${({backgroundImage =''}) => backgroundImage.portraitDesktopImage.url});
+  // added media query to handle responsive image 
+  @media screen and (min-width: 767px) {  
+    background-image: url(${({backgroundImage =''}) => backgroundImage.landscapeDesktopImage.url});
+    background-repeat: no-repeat;
+  }
+  background-size:cover;
   background-color: ${({backgroundColor ='#fff'}) => backgroundColor};
   border-radius: 5px; 
   display: flex;
@@ -26,7 +32,4 @@ export const Hamburger = styled.img`
   background-repeat: no-repeat;
 `
 
- export const MainTitle = styled.div`
-  font-size:80px;
-  margin-left:10px;
- `
+ 
