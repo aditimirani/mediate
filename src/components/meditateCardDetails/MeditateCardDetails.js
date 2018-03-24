@@ -1,6 +1,6 @@
 import React from 'react'
-import {Title,MainTitle}  from '../card/CardStyles'
-import {HeartRate,HeartRoot,Flex, KarmaPoints, FlexKarma}  from './MeditateCardDetailsStyles'
+import {Title,MainTitle}  from '../CommonStyles'
+import {HeartRate,HeartRoot,Flex, KarmaPoints, KarmaText}  from './MeditateCardDetailsStyles'
 const MeditateCardDetails = props => {
   return (
     <div>
@@ -13,7 +13,7 @@ const MeditateCardDetails = props => {
         </HeartRoot>
         <div>
         <KarmaPoints>98</KarmaPoints>
-        <FlexKarma>KARMA POINTS EARNED</FlexKarma>
+        <KarmaText>KARMA POINTS EARNED</KarmaText>
         </div>
         </Flex>
       <Title fontSize={'18px'} letterSpacing={'2pt'} marginBottom={'10px'}>{props.contentTitle}</Title>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Title} from '../card/CardStyles'
+import {Title}  from '../CommonStyles'
 import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,FrequencyRoot,FrequencyRoot1 } from './AudioStyles'
   class Audio extends React.Component {
     constructor(props){

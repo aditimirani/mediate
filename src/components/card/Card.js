@@ -1,6 +1,6 @@
 import React from 'react'
-import {CardContainer,CardHeader, Title, Hamburger} from './CardStyles'
-
+import {CardContainer,CardHeader, Hamburger} from './CardStyles'
+import {Title}  from '../CommonStyles'
 const Card = props =>{
   return(
     <CardContainer backgroundImage={props.backgroundImage}>

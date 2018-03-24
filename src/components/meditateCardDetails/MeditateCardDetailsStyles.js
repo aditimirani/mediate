@@ -18,9 +18,11 @@ export const HeartRate = styled.div`
 export const Flex = styled.div `
   display: flex;
   `
-export const FlexKarma = styled.div `
-  font-size: 17px;
+export const KarmaText = styled.div `
+  font-size: 10px;
   margin-left: 11px
+  opacity:.5;
+  font-family: 'Montserrat-Bold', sans-serif;
  `
 export const KarmaPoints = styled.div `
   display: flex;
