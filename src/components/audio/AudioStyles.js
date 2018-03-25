@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import pause from '../../images/pause-circle.svg'
 const calculateHeight= (height) => {
-  return (500 / height)
+  // To do :  we can calculate the frequency height based on passed height 
+  return height
 }
 export const AudioContainer = styled.div`
   border-radius: 18px;
@@ -28,15 +28,9 @@ export const AudioDescription = styled.div `
 export const AudioPlay = styled.div`
   display: flex;
 `
-export const AudioImg = styled.img`
-  background-image: url(${pause});
-  height:30px;
-  width:30px;
-  background-size:cover;
-`
 export const AudioFrequency = styled.div`
   width:2px;
-  height:${({ height = '50px' }) => `${calculateHeight(height)}px`};
+  height:${({ height = '50' }) => `${calculateHeight(height)}px`};
   background:${({ bgColor = '#50E3C2' }) => bgColor};
   display:inline-block;
   margin-right:7px;

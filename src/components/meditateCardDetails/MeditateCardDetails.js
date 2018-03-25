@@ -1,5 +1,5 @@
 import React from 'react'
-import {Title,MainTitle}  from '../CommonStyles'
+import {Title,MainTitle,SubTitle}  from '../CommonStyles'
 import {HeartRate,HeartRoot,Flex, KarmaPoints, KarmaText}  from './MeditateCardDetailsStyles'
 const MeditateCardDetails = props => {
   return (
@@ -16,7 +16,7 @@ const MeditateCardDetails = props => {
         <KarmaText>KARMA POINTS EARNED</KarmaText>
         </div>
         </Flex>
-      <Title fontSize={'16px'} letterSpacing={'2pt'} marginBottom={'10px'}>{props.contentTitle}</Title>
+      <SubTitle fontSize={'16px'} letterSpacing={'2pt'} marginBottom={'10px'}>{props.contentTitle}</SubTitle>
       <Title letterSpacing={'2.8pt'}>READY BEFORE YOU START</Title>
     </div>
   )

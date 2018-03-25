@@ -1,12 +1,12 @@
 import  {injectGlobal} from 'styled-components';
-import myfont from '../src/font/BebasNeueRegular.ttf';
+import BebasNeueRegular from '../src/font/BebasNeueRegular.ttf';
 
 
 // added custom font BebasNeueRegular
 injectGlobal`
   @font-face {
     font-family: 'BebasNeueRegular';
-    src: url(${myfont});
+    src: url(${BebasNeueRegular});
   }
   body {
     margin:15px;

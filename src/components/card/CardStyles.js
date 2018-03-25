@@ -21,7 +21,7 @@ export const CardHeader = styled.div`
   display: flex;
   
 `
-export const Hamburger = styled.img`
+export const Hamburger = styled.div`
   margin: 0;
   padding: 0;
   cursor: pointer;

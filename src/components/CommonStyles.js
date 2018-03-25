@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import BebasNeueBold from '../font/BebasNeueBold.ttf';
+
 export const Title = styled.div `
   color: ${({ fontColor = 'black' }) => fontColor};
   opacity: ${({ opacity = '1' }) => opacity};
@@ -16,3 +18,11 @@ export const MainTitle = styled.div`
   font-size:80px;
   margin-left:10px;
  `
+//extended all the properties from title style and overridden the font-family
+ export const SubTitle = Title.extend`
+  @font-face {
+    font-family: 'BebasNeueBold';
+    src: url(${BebasNeueBold});
+  }
+  font-family: 'BebasNeueBold'
+`

@@ -7,7 +7,7 @@ export const ClockContainer = styled.div`
   opacity: 0.5;
   padding: 20px 0px 20px 10px;
 `
-export const ClockImage = styled.img`
+export const ClockImage = styled.div`
   background-image: url(${clock});
   height:20px;
   width:20px;

@@ -25,7 +25,7 @@ import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,AudioControl
           <AudioControl>
           <svg width="108" height="62">
             <defs>
-              <filter id="playshadow" x="-20%" y="0" width="200%" height="200%">
+              <filter id='playshadow' x="-20%" y="0" width="200%" height="200%">
                 <feOffset result="offOut" in="SourceGraphic" dx="1" dy="5" />
                 <feColorMatrix result="matrixOut" in="offOut" type="matrix"
                 values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
@@ -47,11 +47,9 @@ import {AudioContainer, AudioFrequency, AudioPlay, AudioDescription,AudioControl
             {this.props.frequency.map((val, key) =>
               <AudioFrequency key={key} height={val}/>
             )}
-            <FrequencyRoot>
             {this.props.frequency.map((val, key) =>
               <AudioFrequency key={key} height={val} opacity={'0.5'} bgColor={'#222222'}/>
             )}
-            </FrequencyRoot>
         </FrequencyRoot>
         </AudioPlay>
       </AudioContainer>
